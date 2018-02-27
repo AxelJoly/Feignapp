@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		772BE12F2045CE270003A3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE12E2045CE270003A3B6 /* AppDelegate.swift */; };
+		772BE1312045CE270003A3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1302045CE270003A3B6 /* ViewController.swift */; };
+		772BE1342045CE270003A3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1322045CE270003A3B6 /* Main.storyboard */; };
+		772BE1362045CE270003A3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1352045CE270003A3B6 /* Assets.xcassets */; };
+		772BE1392045CE270003A3B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1372045CE270003A3B6 /* LaunchScreen.storyboard */; };
+		772BE1442045CE270003A3B6 /* FeignappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1432045CE270003A3B6 /* FeignappTests.swift */; };
+		772BE14F2045CE280003A3B6 /* FeignappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE14E2045CE280003A3B6 /* FeignappUITests.swift */; };
+		772BE1542045CE280003A3B6 /* Feignapp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 772BE1532045CE280003A3B6 /* Feignapp WatchKit App.app */; };
+		772BE15A2045CE280003A3B6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1582045CE280003A3B6 /* Interface.storyboard */; };
+		772BE15C2045CE280003A3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772BE15B2045CE280003A3B6 /* Assets.xcassets */; };
+		772BE1632045CE280003A3B6 /* Feignapp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		772BE1682045CE280003A3B6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1672045CE280003A3B6 /* InterfaceController.swift */; };
+		772BE16A2045CE280003A3B6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */; };
+		772BE16C2045CE280003A3B6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE16B2045CE280003A3B6 /* NotificationController.swift */; };
+		772BE16E2045CE280003A3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772BE16D2045CE280003A3B6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		772BE1402045CE270003A3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BE1232045CE270003A3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BE12A2045CE270003A3B6;
+			remoteInfo = Feignapp;
+		};
+		772BE14B2045CE280003A3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BE1232045CE270003A3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BE12A2045CE270003A3B6;
+			remoteInfo = Feignapp;
+		};
+		772BE1552045CE280003A3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BE1232045CE270003A3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BE1522045CE280003A3B6;
+			remoteInfo = "Feignapp WatchKit App";
+		};
+		772BE1642045CE280003A3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BE1232045CE270003A3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BE1612045CE280003A3B6;
+			remoteInfo = "Feignapp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		772BE1762045CE280003A3B6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				772BE1632045CE280003A3B6 /* Feignapp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE17A2045CE280003A3B6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				772BE1542045CE280003A3B6 /* Feignapp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		772BE12B2045CE270003A3B6 /* Feignapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feignapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE12E2045CE270003A3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		772BE1302045CE270003A3B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		772BE1332045CE270003A3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		772BE1352045CE270003A3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772BE1382045CE270003A3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		772BE13A2045CE270003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BE13F2045CE270003A3B6 /* FeignappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeignappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE1432045CE270003A3B6 /* FeignappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeignappTests.swift; sourceTree = "<group>"; };
+		772BE1452045CE280003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BE14A2045CE280003A3B6 /* FeignappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeignappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE14E2045CE280003A3B6 /* FeignappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeignappUITests.swift; sourceTree = "<group>"; };
+		772BE1502045CE280003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BE1532045CE280003A3B6 /* Feignapp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feignapp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE1592045CE280003A3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		772BE15B2045CE280003A3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772BE15D2045CE280003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Feignapp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE1672045CE280003A3B6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		772BE16B2045CE280003A3B6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		772BE16D2045CE280003A3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		772BE16F2045CE280003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		772BE1702045CE280003A3B6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772BE1282045CE270003A3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE13C2045CE270003A3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1472045CE280003A3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE15F2045CE280003A3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		772BE1222045CE270003A3B6 = {
+			isa = PBXGroup;
+			children = (
+				772BE12D2045CE270003A3B6 /* Feignapp */,
+				772BE1422045CE270003A3B6 /* FeignappTests */,
+				772BE14D2045CE280003A3B6 /* FeignappUITests */,
+				772BE1572045CE280003A3B6 /* Feignapp WatchKit App */,
+				772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */,
+				772BE12C2045CE270003A3B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		772BE12C2045CE270003A3B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				772BE12B2045CE270003A3B6 /* Feignapp.app */,
+				772BE13F2045CE270003A3B6 /* FeignappTests.xctest */,
+				772BE14A2045CE280003A3B6 /* FeignappUITests.xctest */,
+				772BE1532045CE280003A3B6 /* Feignapp WatchKit App.app */,
+				772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		772BE12D2045CE270003A3B6 /* Feignapp */ = {
+			isa = PBXGroup;
+			children = (
+				772BE12E2045CE270003A3B6 /* AppDelegate.swift */,
+				772BE1302045CE270003A3B6 /* ViewController.swift */,
+				772BE1322045CE270003A3B6 /* Main.storyboard */,
+				772BE1352045CE270003A3B6 /* Assets.xcassets */,
+				772BE1372045CE270003A3B6 /* LaunchScreen.storyboard */,
+				772BE13A2045CE270003A3B6 /* Info.plist */,
+			);
+			path = Feignapp;
+			sourceTree = "<group>";
+		};
+		772BE1422045CE270003A3B6 /* FeignappTests */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1432045CE270003A3B6 /* FeignappTests.swift */,
+				772BE1452045CE280003A3B6 /* Info.plist */,
+			);
+			path = FeignappTests;
+			sourceTree = "<group>";
+		};
+		772BE14D2045CE280003A3B6 /* FeignappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				772BE14E2045CE280003A3B6 /* FeignappUITests.swift */,
+				772BE1502045CE280003A3B6 /* Info.plist */,
+			);
+			path = FeignappUITests;
+			sourceTree = "<group>";
+		};
+		772BE1572045CE280003A3B6 /* Feignapp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1582045CE280003A3B6 /* Interface.storyboard */,
+				772BE15B2045CE280003A3B6 /* Assets.xcassets */,
+				772BE15D2045CE280003A3B6 /* Info.plist */,
+			);
+			path = "Feignapp WatchKit App";
+			sourceTree = "<group>";
+		};
+		772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1672045CE280003A3B6 /* InterfaceController.swift */,
+				772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */,
+				772BE16B2045CE280003A3B6 /* NotificationController.swift */,
+				772BE16D2045CE280003A3B6 /* Assets.xcassets */,
+				772BE16F2045CE280003A3B6 /* Info.plist */,
+				772BE1702045CE280003A3B6 /* PushNotificationPayload.apns */,
+			);
+			path = "Feignapp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		772BE12A2045CE270003A3B6 /* Feignapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE17B2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp" */;
+			buildPhases = (
+				772BE1272045CE270003A3B6 /* Sources */,
+				772BE1282045CE270003A3B6 /* Frameworks */,
+				772BE1292045CE270003A3B6 /* Resources */,
+				772BE17A2045CE280003A3B6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BE1562045CE280003A3B6 /* PBXTargetDependency */,
+			);
+			name = Feignapp;
+			productName = Feignapp;
+			productReference = 772BE12B2045CE270003A3B6 /* Feignapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		772BE13E2045CE270003A3B6 /* FeignappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE17E2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappTests" */;
+			buildPhases = (
+				772BE13B2045CE270003A3B6 /* Sources */,
+				772BE13C2045CE270003A3B6 /* Frameworks */,
+				772BE13D2045CE270003A3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BE1412045CE270003A3B6 /* PBXTargetDependency */,
+			);
+			name = FeignappTests;
+			productName = FeignappTests;
+			productReference = 772BE13F2045CE270003A3B6 /* FeignappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		772BE1492045CE280003A3B6 /* FeignappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE1812045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappUITests" */;
+			buildPhases = (
+				772BE1462045CE280003A3B6 /* Sources */,
+				772BE1472045CE280003A3B6 /* Frameworks */,
+				772BE1482045CE280003A3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BE14C2045CE280003A3B6 /* PBXTargetDependency */,
+			);
+			name = FeignappUITests;
+			productName = FeignappUITests;
+			productReference = 772BE14A2045CE280003A3B6 /* FeignappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		772BE1522045CE280003A3B6 /* Feignapp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE1772045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit App" */;
+			buildPhases = (
+				772BE1512045CE280003A3B6 /* Resources */,
+				772BE1762045CE280003A3B6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				772BE1652045CE280003A3B6 /* PBXTargetDependency */,
+			);
+			name = "Feignapp WatchKit App";
+			productName = "Feignapp WatchKit App";
+			productReference = 772BE1532045CE280003A3B6 /* Feignapp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		772BE1612045CE280003A3B6 /* Feignapp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE1732045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit Extension" */;
+			buildPhases = (
+				772BE15E2045CE280003A3B6 /* Sources */,
+				772BE15F2045CE280003A3B6 /* Frameworks */,
+				772BE1602045CE280003A3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Feignapp WatchKit Extension";
+			productName = "Feignapp WatchKit Extension";
+			productReference = 772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		772BE1232045CE270003A3B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Axel Joly";
+				TargetAttributes = {
+					772BE12A2045CE270003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					772BE13E2045CE270003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 772BE12A2045CE270003A3B6;
+					};
+					772BE1492045CE280003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 772BE12A2045CE270003A3B6;
+					};
+					772BE1522045CE280003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					772BE1612045CE280003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 772BE1262045CE270003A3B6 /* Build configuration list for PBXProject "Feignapp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 772BE1222045CE270003A3B6;
+			productRefGroup = 772BE12C2045CE270003A3B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				772BE12A2045CE270003A3B6 /* Feignapp */,
+				772BE13E2045CE270003A3B6 /* FeignappTests */,
+				772BE1492045CE280003A3B6 /* FeignappUITests */,
+				772BE1522045CE280003A3B6 /* Feignapp WatchKit App */,
+				772BE1612045CE280003A3B6 /* Feignapp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		772BE1292045CE270003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1392045CE270003A3B6 /* LaunchScreen.storyboard in Resources */,
+				772BE1362045CE270003A3B6 /* Assets.xcassets in Resources */,
+				772BE1342045CE270003A3B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE13D2045CE270003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1482045CE280003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1512045CE280003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE15C2045CE280003A3B6 /* Assets.xcassets in Resources */,
+				772BE15A2045CE280003A3B6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1602045CE280003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE16E2045CE280003A3B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		772BE1272045CE270003A3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1312045CE270003A3B6 /* ViewController.swift in Sources */,
+				772BE12F2045CE270003A3B6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE13B2045CE270003A3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1442045CE270003A3B6 /* FeignappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1462045CE280003A3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE14F2045CE280003A3B6 /* FeignappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE15E2045CE280003A3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE16C2045CE280003A3B6 /* NotificationController.swift in Sources */,
+				772BE16A2045CE280003A3B6 /* ExtensionDelegate.swift in Sources */,
+				772BE1682045CE280003A3B6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		772BE1412045CE270003A3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BE12A2045CE270003A3B6 /* Feignapp */;
+			targetProxy = 772BE1402045CE270003A3B6 /* PBXContainerItemProxy */;
+		};
+		772BE14C2045CE280003A3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BE12A2045CE270003A3B6 /* Feignapp */;
+			targetProxy = 772BE14B2045CE280003A3B6 /* PBXContainerItemProxy */;
+		};
+		772BE1562045CE280003A3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BE1522045CE280003A3B6 /* Feignapp WatchKit App */;
+			targetProxy = 772BE1552045CE280003A3B6 /* PBXContainerItemProxy */;
+		};
+		772BE1652045CE280003A3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BE1612045CE280003A3B6 /* Feignapp WatchKit Extension */;
+			targetProxy = 772BE1642045CE280003A3B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		772BE1322045CE270003A3B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BE1332045CE270003A3B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		772BE1372045CE270003A3B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BE1382045CE270003A3B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		772BE1582045CE280003A3B6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BE1592045CE280003A3B6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		772BE1712045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		772BE1722045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		772BE1742045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = "Feignapp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		772BE1752045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = "Feignapp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		772BE1782045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				IBSC_MODULE = Feignapp_WatchKit_Extension;
+				INFOPLIST_FILE = "Feignapp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		772BE1792045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				IBSC_MODULE = Feignapp_WatchKit_Extension;
+				INFOPLIST_FILE = "Feignapp WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		772BE17C2045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = Feignapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		772BE17D2045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = Feignapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		772BE17F2045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeignappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feignapp.app/Feignapp";
+			};
+			name = Debug;
+		};
+		772BE1802045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeignappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Feignapp.app/Feignapp";
+			};
+			name = Release;
+		};
+		772BE1822045CE280003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeignappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feignapp;
+			};
+			name = Debug;
+		};
+		772BE1832045CE280003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FeignappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Feignapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		772BE1262045CE270003A3B6 /* Build configuration list for PBXProject "Feignapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE1712045CE280003A3B6 /* Debug */,
+				772BE1722045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE1732045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE1742045CE280003A3B6 /* Debug */,
+				772BE1752045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE1772045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE1782045CE280003A3B6 /* Debug */,
+				772BE1792045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE17B2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE17C2045CE280003A3B6 /* Debug */,
+				772BE17D2045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE17E2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE17F2045CE280003A3B6 /* Debug */,
+				772BE1802045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE1812045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE1822045CE280003A3B6 /* Debug */,
+				772BE1832045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 772BE1232045CE270003A3B6 /* Project object */;
+}
