@@ -1,16 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Feignapp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="bK5-od-KJw">
+                            <items>
+                                <button width="64" height="19" alignment="left" title="To Toulon" id="EOQ-g3-Cek">
+                                    <color key="titleColor" red="0.046830217086571757" green="1" blue="0.32775432372066016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="switchDirection" destination="AgC-eL-Hgc" id="V3w-P6-cFZ"/>
+                                    </connections>
+                                </button>
+                                <imageView width="16" height="16" alignment="left" id="PI9-xN-T5s"/>
+                                <label width="69" height="18" alignment="left" text="Feignapp" id="gOS-OW-Exb"/>
+                            </items>
+                        </group>
+                        <table alignment="left" id="bQq-mJ-jN7">
+                            <items>
+                                <tableRow identifier="TravelRow" id="3Xk-cK-dVp" customClass="TravelRow" customModule="Feignapp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="63" alignment="left" id="KDX-Qj-Fkh">
+                                        <items>
+                                            <group width="134" height="178" alignment="left" layout="vertical" spacing="0.0" id="5Rs-dY-Msa">
+                                                <items>
+                                                    <label width="126" height="22" alignment="left" text="TLN" id="vhL-BI-43P"/>
+                                                    <label width="135" height="17" alignment="right" text="SRY" textAlignment="left" id="BCz-X8-3dE"/>
+                                                    <label width="136" height="12" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="right" id="804-YD-NpZ">
+                                                        <fontDescription key="font" name="Helvetica-Light" family="Helvetica" pointSize="11"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="arrival" destination="BCz-X8-3dE" id="8fY-BD-heY"/>
+                                        <outlet property="date" destination="804-YD-NpZ" id="y5X-7w-5Mp"/>
+                                        <outlet property="departure" destination="vhL-BI-43P" id="kU1-BL-fFM"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="loadingImage" destination="PI9-xN-T5s" id="QDP-GE-6JJ"/>
+                        <outlet property="switchButton" destination="EOQ-g3-Cek" id="P4b-uW-LhE"/>
+                        <outlet property="travelsTable" destination="bQq-mJ-jN7" id="aeC-1c-gvx"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +85,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Feignapp_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

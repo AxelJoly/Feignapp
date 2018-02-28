@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>46757107030-7fv58af26ncls318tfr5vqvku5d8m2dm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.46757107030-7fv58af26ncls318tfr5vqvku5d8m2dm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAwQIYpc-oWY54ZU1kWueaSeng42qVT-2w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>46757107030</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Feignapp</string>
+	<key>PROJECT_ID</key>
+	<string>feignapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>feignapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:46757107030:ios:c8f16d1b5d490ec6</string>
+	<key>DATABASE_URL</key>
+	<string>https://feignapp.firebaseio.com</string>
+</dict>
+</plist>

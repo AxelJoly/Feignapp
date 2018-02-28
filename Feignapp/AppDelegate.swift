@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  Feignapp
+//  TrainApp
 //
-//  Created by Joly Axel on 27/02/2018.
-//  Copyright © 2018 Axel Joly. All rights reserved.
+//  Created by Joly Axel on 27/01/2018.
+//  Copyright © 2018 Axel. All rights reserved.
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
         return true
     }
 

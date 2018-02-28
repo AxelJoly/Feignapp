@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02887D5CA42D3021451D84F8 /* Pods_FeignappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99A809C46F8F7B1FE90C2DA7 /* Pods_FeignappTests.framework */; };
+		46F6926767D1E63905F39BCD /* Pods_Feignapp_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553AB86923FA69134D03CE13 /* Pods_Feignapp_WatchKit_Extension.framework */; };
+		47F4F7CCE94424B22A32CD8B /* Pods_Feignapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD88AE940907267672EDD80F /* Pods_Feignapp.framework */; };
 		772BE12F2045CE270003A3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE12E2045CE270003A3B6 /* AppDelegate.swift */; };
 		772BE1312045CE270003A3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1302045CE270003A3B6 /* ViewController.swift */; };
 		772BE1342045CE270003A3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1322045CE270003A3B6 /* Main.storyboard */; };
@@ -22,6 +25,22 @@
 		772BE16A2045CE280003A3B6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */; };
 		772BE16C2045CE280003A3B6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE16B2045CE280003A3B6 /* NotificationController.swift */; };
 		772BE16E2045CE280003A3B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 772BE16D2045CE280003A3B6 /* Assets.xcassets */; };
+		772BE1852046ADEF0003A3B6 /* CustomPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1842046ADEF0003A3B6 /* CustomPopup.swift */; };
+		772BE18B2046AE060003A3B6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1862046AE060003A3B6 /* SettingsTableViewController.swift */; };
+		772BE18C2046AE060003A3B6 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1872046AE060003A3B6 /* TabViewController.swift */; };
+		772BE18D2046AE060003A3B6 /* FirebaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1882046AE060003A3B6 /* FirebaseServices.swift */; };
+		772BE18E2046AE060003A3B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1892046AE060003A3B6 /* HomeViewController.swift */; };
+		772BE18F2046AE060003A3B6 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE18A2046AE060003A3B6 /* TravelModel.swift */; };
+		772BE1912046AED00003A3B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1902046AED00003A3B6 /* GoogleService-Info.plist */; };
+		772BE1952046AF600003A3B6 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1932046AF600003A3B6 /* RammettoOne-Regular.ttf */; };
+		772BE1962046AF600003A3B6 /* StrawberryBlossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1942046AF600003A3B6 /* StrawberryBlossom.ttf */; };
+		772BE19D2046B0FF0003A3B6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1982046B0FF0003A3B6 /* Environment.swift */; };
+		772BE19E2046B0FF0003A3B6 /* StationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1992046B0FF0003A3B6 /* StationStruct.swift */; };
+		772BE19F2046B0FF0003A3B6 /* TravelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19A2046B0FF0003A3B6 /* TravelRow.swift */; };
+		772BE1A02046B0FF0003A3B6 /* TravelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */; };
+		772BE1A12046B0FF0003A3B6 /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */; };
+		F0EBCA3D113F4B62C382BD41 /* Pods_FeignappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406E94055E6C94F55830E73 /* Pods_FeignappUITests.framework */; };
+		FD0A2BC979509E64AA525AE9 /* Pods_Feignapp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4546247EC293108940BF97B2 /* Pods_Feignapp_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +100,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		045AF998163DBB2056D40107 /* Pods-Feignapp WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp WatchKit App/Pods-Feignapp WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		4546247EC293108940BF97B2 /* Pods_Feignapp_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feignapp_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B6EC35C1A93612F05EDA04 /* Pods-FeignappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeignappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeignappUITests/Pods-FeignappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		553AB86923FA69134D03CE13 /* Pods_Feignapp_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feignapp_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58B942F5171513E86576DCA3 /* Pods-FeignappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeignappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeignappTests/Pods-FeignappTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FE576649A4A57781C4BC1CF /* Pods-Feignapp WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp WatchKit Extension/Pods-Feignapp WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		71E13257DA1FF72523461793 /* Pods-Feignapp WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp WatchKit Extension/Pods-Feignapp WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		772BE12B2045CE270003A3B6 /* Feignapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feignapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772BE12E2045CE270003A3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772BE1302045CE270003A3B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,13 +131,44 @@
 		772BE16D2045CE280003A3B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		772BE16F2045CE280003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772BE1702045CE280003A3B6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		772BE1842046ADEF0003A3B6 /* CustomPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopup.swift; sourceTree = "<group>"; };
+		772BE1862046AE060003A3B6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		772BE1872046AE060003A3B6 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		772BE1882046AE060003A3B6 /* FirebaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseServices.swift; sourceTree = "<group>"; };
+		772BE1892046AE060003A3B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		772BE18A2046AE060003A3B6 /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		772BE1902046AED00003A3B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		772BE1932046AF600003A3B6 /* RammettoOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RammettoOne-Regular.ttf"; sourceTree = "<group>"; };
+		772BE1942046AF600003A3B6 /* StrawberryBlossom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StrawberryBlossom.ttf; sourceTree = "<group>"; };
+		772BE1982046B0FF0003A3B6 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		772BE1992046B0FF0003A3B6 /* StationStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationStruct.swift; sourceTree = "<group>"; };
+		772BE19A2046B0FF0003A3B6 /* TravelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRow.swift; sourceTree = "<group>"; };
+		772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelStruct.swift; sourceTree = "<group>"; };
+		772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInterfaceController.swift; sourceTree = "<group>"; };
+		7FEC628855A365294900C7FA /* Pods-Feignapp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp WatchKit App/Pods-Feignapp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		97F293BB8E189B60E68164E4 /* Pods-FeignappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeignappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeignappUITests/Pods-FeignappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		99A809C46F8F7B1FE90C2DA7 /* Pods_FeignappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeignappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3BF1AE59441A3BDB2F834A /* Pods-Feignapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp/Pods-Feignapp.release.xcconfig"; sourceTree = "<group>"; };
+		A406E94055E6C94F55830E73 /* Pods_FeignappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeignappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD88AE940907267672EDD80F /* Pods_Feignapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feignapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C152472F5D82BBBB40C912 /* Pods-Feignapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp/Pods-Feignapp.debug.xcconfig"; sourceTree = "<group>"; };
+		EE67684DEC701ADB698EEA11 /* Pods-FeignappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeignappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeignappTests/Pods-FeignappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F303E127894B7CF1B9DC4B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0A2BC979509E64AA525AE9 /* Pods_Feignapp_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		772BE1282045CE270003A3B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F4F7CCE94424B22A32CD8B /* Pods_Feignapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02887D5CA42D3021451D84F8 /* Pods_FeignappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EBCA3D113F4B62C382BD41 /* Pods_FeignappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +192,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F6926767D1E63905F39BCD /* Pods_Feignapp_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22498CE20FF4CFC7FBB0D7FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5C152472F5D82BBBB40C912 /* Pods-Feignapp.debug.xcconfig */,
+				9A3BF1AE59441A3BDB2F834A /* Pods-Feignapp.release.xcconfig */,
+				7FEC628855A365294900C7FA /* Pods-Feignapp WatchKit App.debug.xcconfig */,
+				045AF998163DBB2056D40107 /* Pods-Feignapp WatchKit App.release.xcconfig */,
+				71E13257DA1FF72523461793 /* Pods-Feignapp WatchKit Extension.debug.xcconfig */,
+				5FE576649A4A57781C4BC1CF /* Pods-Feignapp WatchKit Extension.release.xcconfig */,
+				EE67684DEC701ADB698EEA11 /* Pods-FeignappTests.debug.xcconfig */,
+				58B942F5171513E86576DCA3 /* Pods-FeignappTests.release.xcconfig */,
+				97F293BB8E189B60E68164E4 /* Pods-FeignappUITests.debug.xcconfig */,
+				50B6EC35C1A93612F05EDA04 /* Pods-FeignappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		772BE1222045CE270003A3B6 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +225,8 @@
 				772BE1572045CE280003A3B6 /* Feignapp WatchKit App */,
 				772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */,
 				772BE12C2045CE270003A3B6 /* Products */,
+				22498CE20FF4CFC7FBB0D7FD /* Pods */,
+				C3F08421D2290E5670A7CFE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +245,14 @@
 		772BE12D2045CE270003A3B6 /* Feignapp */ = {
 			isa = PBXGroup;
 			children = (
+				772BE1882046AE060003A3B6 /* FirebaseServices.swift */,
+				772BE1892046AE060003A3B6 /* HomeViewController.swift */,
+				772BE1862046AE060003A3B6 /* SettingsTableViewController.swift */,
+				772BE1922046AF600003A3B6 /* Fonts */,
+				772BE1872046AE060003A3B6 /* TabViewController.swift */,
+				772BE18A2046AE060003A3B6 /* TravelModel.swift */,
+				772BE1842046ADEF0003A3B6 /* CustomPopup.swift */,
+				772BE1902046AED00003A3B6 /* GoogleService-Info.plist */,
 				772BE12E2045CE270003A3B6 /* AppDelegate.swift */,
 				772BE1302045CE270003A3B6 /* ViewController.swift */,
 				772BE1322045CE270003A3B6 /* Main.storyboard */,
@@ -207,6 +294,11 @@
 		772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				772BE1972046B0FF0003A3B6 /* env */,
+				772BE1992046B0FF0003A3B6 /* StationStruct.swift */,
+				772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */,
+				772BE19A2046B0FF0003A3B6 /* TravelRow.swift */,
+				772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */,
 				772BE1672045CE280003A3B6 /* InterfaceController.swift */,
 				772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */,
 				772BE16B2045CE280003A3B6 /* NotificationController.swift */,
@@ -217,6 +309,35 @@
 			path = "Feignapp WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		772BE1922046AF600003A3B6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1932046AF600003A3B6 /* RammettoOne-Regular.ttf */,
+				772BE1942046AF600003A3B6 /* StrawberryBlossom.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		772BE1972046B0FF0003A3B6 /* env */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1982046B0FF0003A3B6 /* Environment.swift */,
+			);
+			path = env;
+			sourceTree = "<group>";
+		};
+		C3F08421D2290E5670A7CFE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD88AE940907267672EDD80F /* Pods_Feignapp.framework */,
+				4546247EC293108940BF97B2 /* Pods_Feignapp_WatchKit_App.framework */,
+				553AB86923FA69134D03CE13 /* Pods_Feignapp_WatchKit_Extension.framework */,
+				99A809C46F8F7B1FE90C2DA7 /* Pods_FeignappTests.framework */,
+				A406E94055E6C94F55830E73 /* Pods_FeignappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,10 +345,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BE17B2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp" */;
 			buildPhases = (
+				B00CBBDB866A75B3D030D9F1 /* [CP] Check Pods Manifest.lock */,
 				772BE1272045CE270003A3B6 /* Sources */,
 				772BE1282045CE270003A3B6 /* Frameworks */,
 				772BE1292045CE270003A3B6 /* Resources */,
 				772BE17A2045CE280003A3B6 /* Embed Watch Content */,
+				9DD6032D52FD3AFC2977DB0C /* [CP] Embed Pods Frameworks */,
+				363898E8E5859AE75C2D4C12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BE17E2045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappTests" */;
 			buildPhases = (
+				32D4A7F337DA96B912FE3943 /* [CP] Check Pods Manifest.lock */,
 				772BE13B2045CE270003A3B6 /* Sources */,
 				772BE13C2045CE270003A3B6 /* Frameworks */,
 				772BE13D2045CE270003A3B6 /* Resources */,
+				F67F7DA9B535BD27AE1FDD3A /* [CP] Embed Pods Frameworks */,
+				A05B9FC8F6DBF7E0659CA3E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,9 +388,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BE1812045CE280003A3B6 /* Build configuration list for PBXNativeTarget "FeignappUITests" */;
 			buildPhases = (
+				3198112370F2BD901596FE52 /* [CP] Check Pods Manifest.lock */,
 				772BE1462045CE280003A3B6 /* Sources */,
 				772BE1472045CE280003A3B6 /* Frameworks */,
 				772BE1482045CE280003A3B6 /* Resources */,
+				86E8BE09316BFD87220085F1 /* [CP] Embed Pods Frameworks */,
+				7CE9F182547858424B0FDB38 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,8 +409,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BE1772045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit App" */;
 			buildPhases = (
+				B615D49715E730C6047408C0 /* [CP] Check Pods Manifest.lock */,
 				772BE1512045CE280003A3B6 /* Resources */,
 				772BE1762045CE280003A3B6 /* Embed App Extensions */,
+				1F303E127894B7CF1B9DC4B5 /* Frameworks */,
+				6440962D8DBEFAAF104188AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,9 +429,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772BE1732045CE280003A3B6 /* Build configuration list for PBXNativeTarget "Feignapp WatchKit Extension" */;
 			buildPhases = (
+				EF25A3B56E0024D96D40B90C /* [CP] Check Pods Manifest.lock */,
 				772BE15E2045CE280003A3B6 /* Sources */,
 				772BE15F2045CE280003A3B6 /* Frameworks */,
 				772BE1602045CE280003A3B6 /* Resources */,
+				75503E817773BFE932FA78A0 /* [CP] Embed Pods Frameworks */,
+				FD9B0222C933EF5BD142F970 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,8 +507,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				772BE1392045CE270003A3B6 /* LaunchScreen.storyboard in Resources */,
+				772BE1962046AF600003A3B6 /* StrawberryBlossom.ttf in Resources */,
 				772BE1362045CE270003A3B6 /* Assets.xcassets in Resources */,
 				772BE1342045CE270003A3B6 /* Main.storyboard in Resources */,
+				772BE1952046AF600003A3B6 /* RammettoOne-Regular.ttf in Resources */,
+				772BE1912046AED00003A3B6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +548,269 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3198112370F2BD901596FE52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeignappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32D4A7F337DA96B912FE3943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FeignappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363898E8E5859AE75C2D4C12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp/Pods-Feignapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6440962D8DBEFAAF104188AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp WatchKit App/Pods-Feignapp WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75503E817773BFE932FA78A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp WatchKit Extension/Pods-Feignapp WatchKit Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-watchOS/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/EMTLoadingIndicator/EMTLoadingIndicator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EMTLoadingIndicator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp WatchKit Extension/Pods-Feignapp WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE9F182547858424B0FDB38 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeignappUITests/Pods-FeignappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E8BE09316BFD87220085F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeignappUITests/Pods-FeignappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD6032D52FD3AFC2977DB0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp/Pods-Feignapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp/Pods-Feignapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A05B9FC8F6DBF7E0659CA3E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeignappTests/Pods-FeignappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B00CBBDB866A75B3D030D9F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feignapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B615D49715E730C6047408C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feignapp WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF25A3B56E0024D96D40B90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feignapp WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67F7DA9B535BD27AE1FDD3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeignappTests/Pods-FeignappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD9B0222C933EF5BD142F970 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Feignapp WatchKit Extension/Pods-Feignapp WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		772BE1272045CE270003A3B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772BE18B2046AE060003A3B6 /* SettingsTableViewController.swift in Sources */,
 				772BE1312045CE270003A3B6 /* ViewController.swift in Sources */,
+				772BE18D2046AE060003A3B6 /* FirebaseServices.swift in Sources */,
+				772BE18F2046AE060003A3B6 /* TravelModel.swift in Sources */,
 				772BE12F2045CE270003A3B6 /* AppDelegate.swift in Sources */,
+				772BE18C2046AE060003A3B6 /* TabViewController.swift in Sources */,
+				772BE18E2046AE060003A3B6 /* HomeViewController.swift in Sources */,
+				772BE1852046ADEF0003A3B6 /* CustomPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,8 +835,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				772BE16C2045CE280003A3B6 /* NotificationController.swift in Sources */,
+				772BE19D2046B0FF0003A3B6 /* Environment.swift in Sources */,
 				772BE16A2045CE280003A3B6 /* ExtensionDelegate.swift in Sources */,
 				772BE1682045CE280003A3B6 /* InterfaceController.swift in Sources */,
+				772BE19F2046B0FF0003A3B6 /* TravelRow.swift in Sources */,
+				772BE19E2046B0FF0003A3B6 /* StationStruct.swift in Sources */,
+				772BE1A12046B0FF0003A3B6 /* TableInterfaceController.swift in Sources */,
+				772BE1A02046B0FF0003A3B6 /* TravelStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,10 +1007,11 @@
 		};
 		772BE1742045CE280003A3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E13257DA1FF72523461793 /* Pods-Feignapp WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T89NDVKT77;
+				DEVELOPMENT_TEAM = 8UGBTSPL62;
 				INFOPLIST_FILE = "Feignapp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp.watchkitextension;
@@ -625,10 +1026,11 @@
 		};
 		772BE1752045CE280003A3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE576649A4A57781C4BC1CF /* Pods-Feignapp WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T89NDVKT77;
+				DEVELOPMENT_TEAM = 8UGBTSPL62;
 				INFOPLIST_FILE = "Feignapp WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.watchkitapp.watchkitextension;
@@ -643,6 +1045,7 @@
 		};
 		772BE1782045CE280003A3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEC628855A365294900C7FA /* Pods-Feignapp WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -662,6 +1065,7 @@
 		};
 		772BE1792045CE280003A3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045AF998163DBB2056D40107 /* Pods-Feignapp WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -681,10 +1085,11 @@
 		};
 		772BE17C2045CE280003A3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C152472F5D82BBBB40C912 /* Pods-Feignapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T89NDVKT77;
+				DEVELOPMENT_TEAM = 3RM283MDQE;
 				INFOPLIST_FILE = Feignapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
@@ -696,10 +1101,11 @@
 		};
 		772BE17D2045CE280003A3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3BF1AE59441A3BDB2F834A /* Pods-Feignapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T89NDVKT77;
+				DEVELOPMENT_TEAM = 3RM283MDQE;
 				INFOPLIST_FILE = Feignapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
@@ -711,6 +1117,7 @@
 		};
 		772BE17F2045CE280003A3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE67684DEC701ADB698EEA11 /* Pods-FeignappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -728,6 +1135,7 @@
 		};
 		772BE1802045CE280003A3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B942F5171513E86576DCA3 /* Pods-FeignappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -745,6 +1153,7 @@
 		};
 		772BE1822045CE280003A3B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F293BB8E189B60E68164E4 /* Pods-FeignappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -761,6 +1170,7 @@
 		};
 		772BE1832045CE280003A3B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B6EC35C1A93612F05EDA04 /* Pods-FeignappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
