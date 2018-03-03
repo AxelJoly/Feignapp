@@ -7,17 +7,22 @@
 		<key>Feignapp WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>18</integer>
 		</dict>
 		<key>Feignapp WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>17</integer>
 		</dict>
 		<key>Feignapp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>16</integer>
+		</dict>
+		<key>FeignappWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
 		</dict>
 	</dict>
 </dict>

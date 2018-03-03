@@ -40,6 +40,22 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         }else{
             self.count = 5
         }
+        
+        if( (defaults.string(forKey: "arrivalName") != nil) && (defaults.string(forKey: "departureName") != nil) && (defaults.string(forKey: "departureLat") != nil) && (defaults.string(forKey: "departureLon") != nil) && (defaults.string(forKey: "arrivalLat") != nil) && (defaults.string(forKey: "arrivalLon") != nil)){
+       
+            print("La valeur est: \(defaults.string(forKey: "arrivalName")!)")
+            print("La valeur est: \(defaults.string(forKey: "arrivalLon")!)")
+            print("La valeur est: \(defaults.string(forKey: "arrivalLat")!)")
+            print("------------------------------")
+            print("La valeur est: \(defaults.string(forKey: "departureName")!)")
+            print("La valeur est: \(defaults.string(forKey: "departureLon")!)")
+            print("La valeur est: \(defaults.string(forKey: "departureLat")!)")
+            
+            
+            self.city1 = StationStruct(name: defaults.string(forKey: "departureName")!, latitude: defaults.string(forKey: "departureLat")!, longitude: defaults.string(forKey: "departureLon")!)
+            self.city2 = StationStruct(name: defaults.string(forKey: "arrivalName")!, latitude: defaults.string(forKey: "arrivalLat")!, longitude: defaults.string(forKey: "arrivalLon")!)
+            self.switchButton.setTitle("To \(city2.name)")
+        }
         urlRequest(departure: self.city1, arriving: self.city2)
        
     }
@@ -70,11 +86,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
        if(state == 1){
             urlRequest(departure: self.city1, arriving: self.city2)
             state = 0
-            switchButton.setTitle("To Toulon")
+            switchButton.setTitle("To \(city2.name)")
         }else if(state == 0){
             urlRequest(departure: self.city2, arriving: self.city1)
             state = 1
-            switchButton.setTitle("To Sanary")
+            switchButton.setTitle("To \(city1.name)")
         }
     }
     
@@ -115,13 +131,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
                         }
                     }
                 }
-                  self.setupTable(travels: travels)
+                  self.setupTable(travels: travels, direction: arriving.name)
             }
         }
     }
     
     // Display the TableView with journeys data.
-    func setupTable(travels: [TravelStruct]) {
+    func setupTable(travels: [TravelStruct], direction: String) {
         travelsTable.setNumberOfRows(travels.count, withRowType: "TravelRow")
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE dd - HH:mm"
@@ -130,12 +146,12 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             if let row = travelsTable.rowController(at: i) as? TravelRow {
                 let finalDateStr:String = dateFormatter.string(from: travels[i].departure_date)
                 row.date.setText(String (describing: finalDateStr))
-                if travels[i].direction == "Marseille-St-Charles (Marseille)"{
-                    row.departure.setText("Toulon")
-                    row.arrival.setText("Sanary")
+                if city1.name == direction{
+                    row.departure.setText(city2.name)
+                    row.arrival.setText(city1.name)
                 }else {
-                    row.departure.setText("Sanary")
-                    row.arrival.setText("Toulon")
+                    row.departure.setText(city1.name)
+                    row.arrival.setText(city2.name)
                 }
             }
         }
@@ -144,14 +160,39 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     // Establish session between the Watch App and iOS App. Retrieve how much journey you want from iOS UITextfield.
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
-        let value = message["Message"] as? String
+        let value = message["nbJourney"] as? String
+        let departure = message["departureName"] as? String
+        let arrival = message["arrivalName"] as? String
+        let departureLat = message["departureLat"] as? String
+        let departureLon = message["departureLon"] as? String
+        let arrivalLat = message["arrivalLat"] as? String
+        let arrivalLon = message["arrivalLon"] as? String
+
         DispatchQueue.main.async { () -> Void in
             print("La valeur est: \(value!)")
+            print("La valeur est: \(arrival!)")
+             print("La valeur est: \(arrivalLon!)")
+            print("La valeur est: \(arrivalLat!)")
+            print("------------------------------")
+            print("La valeur est: \(departure!)")
+            print("La valeur est: \(departureLon!)")
+            print("La valeur est: \(departureLat!)")
+            
+            
             self.count = Int(value!)!
-            //print("Valeur débile de count: \(self.count)")
+        
             let defaults = UserDefaults.standard
             let nbJourney = value!
             defaults.set(nbJourney, forKey: "nbJourney")
+            defaults.set(departure, forKey: "departureName")
+            defaults.set(arrival, forKey: "arrivalName")
+            defaults.set(departureLat, forKey: "departureLat")
+            defaults.set(arrivalLat, forKey: "arrivalLat")
+            defaults.set(departureLon, forKey: "departureLon")
+            defaults.set(arrivalLon, forKey: "arrivalLon")
+            self.city1 = StationStruct(name: departure!, latitude: departureLat!, longitude: departureLon!)
+            self.city2 = StationStruct(name: arrival!, latitude: departureLat!, longitude: departureLon!)
+            self.switchButton.setTitle("To \(self.city2.name)")
             self.direction()
         }
     }

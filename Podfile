@@ -10,6 +10,8 @@ platform :ios, '11.0'
   pod 'PopupDialog', '~> 0.7'
   pod 'SwiftyJSON'
   pod 'Firebase/Auth'
+  pod 'SearchTextField'
+ 
   
   
   # Pods for Feignapp

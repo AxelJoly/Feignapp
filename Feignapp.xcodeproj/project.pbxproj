@@ -35,10 +35,21 @@
 		772BE1952046AF600003A3B6 /* RammettoOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1932046AF600003A3B6 /* RammettoOne-Regular.ttf */; };
 		772BE1962046AF600003A3B6 /* StrawberryBlossom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1942046AF600003A3B6 /* StrawberryBlossom.ttf */; };
 		772BE19D2046B0FF0003A3B6 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1982046B0FF0003A3B6 /* Environment.swift */; };
-		772BE19E2046B0FF0003A3B6 /* StationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1992046B0FF0003A3B6 /* StationStruct.swift */; };
 		772BE19F2046B0FF0003A3B6 /* TravelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19A2046B0FF0003A3B6 /* TravelRow.swift */; };
-		772BE1A02046B0FF0003A3B6 /* TravelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */; };
 		772BE1A12046B0FF0003A3B6 /* TableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */; };
+		772BE1A32046BE830003A3B6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1A22046BE830003A3B6 /* README.md */; };
+		772BE1A82046BEAC0003A3B6 /* phone2.png in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1A52046BEAC0003A3B6 /* phone2.png */; };
+		772BE1A92046BEAC0003A3B6 /* watch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1A62046BEAC0003A3B6 /* watch1.png */; };
+		772BE1AA2046BEAC0003A3B6 /* phone1.png in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1A72046BEAC0003A3B6 /* phone1.png */; };
+		772BE1B12046E75E0003A3B6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 772BE1B02046E75E0003A3B6 /* NotificationCenter.framework */; };
+		772BE1B42046E75E0003A3B6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1B32046E75E0003A3B6 /* TodayViewController.swift */; };
+		772BE1B72046E75E0003A3B6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772BE1B52046E75E0003A3B6 /* MainInterface.storyboard */; };
+		772BE1BB2046E75E0003A3B6 /* FeignappWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 772BE1AF2046E75E0003A3B6 /* FeignappWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		772BE1C220470A990003A3B6 /* StationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE1992046B0FF0003A3B6 /* StationStruct.swift */; };
+		772BE1C320470A990003A3B6 /* TravelStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */; };
+		775B721920498E220076BA3A /* stationsFiltered.json in Resources */ = {isa = PBXBuildFile; fileRef = 775B721820498E220076BA3A /* stationsFiltered.json */; };
+		7780DE132048648A000F6C9E /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7780DE122048648A000F6C9E /* stations.json */; };
+		7780DE1620486DC4000F6C9E /* StationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7780DE1520486DC4000F6C9E /* StationStruct.swift */; };
 		F0EBCA3D113F4B62C382BD41 /* Pods_FeignappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A406E94055E6C94F55830E73 /* Pods_FeignappUITests.framework */; };
 		FD0A2BC979509E64AA525AE9 /* Pods_Feignapp_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4546247EC293108940BF97B2 /* Pods_Feignapp_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +83,13 @@
 			remoteGlobalIDString = 772BE1612045CE280003A3B6;
 			remoteInfo = "Feignapp WatchKit Extension";
 		};
+		772BE1B92046E75E0003A3B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 772BE1232045CE270003A3B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 772BE1AE2046E75E0003A3B6;
+			remoteInfo = FeignappWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,6 +113,17 @@
 				772BE1542045CE280003A3B6 /* Feignapp WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1BF2046E75E0003A3B6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				772BE1BB2046E75E0003A3B6 /* FeignappWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -145,6 +174,18 @@
 		772BE19A2046B0FF0003A3B6 /* TravelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelRow.swift; sourceTree = "<group>"; };
 		772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelStruct.swift; sourceTree = "<group>"; };
 		772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableInterfaceController.swift; sourceTree = "<group>"; };
+		772BE1A22046BE830003A3B6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		772BE1A52046BEAC0003A3B6 /* phone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone2.png; sourceTree = "<group>"; };
+		772BE1A62046BEAC0003A3B6 /* watch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watch1.png; sourceTree = "<group>"; };
+		772BE1A72046BEAC0003A3B6 /* phone1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone1.png; sourceTree = "<group>"; };
+		772BE1AF2046E75E0003A3B6 /* FeignappWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FeignappWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		772BE1B02046E75E0003A3B6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		772BE1B32046E75E0003A3B6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		772BE1B62046E75E0003A3B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		772BE1B82046E75E0003A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775B721820498E220076BA3A /* stationsFiltered.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stationsFiltered.json; sourceTree = "<group>"; };
+		7780DE122048648A000F6C9E /* stations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
+		7780DE1520486DC4000F6C9E /* StationStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStruct.swift; sourceTree = "<group>"; };
 		7FEC628855A365294900C7FA /* Pods-Feignapp WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feignapp WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Feignapp WatchKit App/Pods-Feignapp WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		97F293BB8E189B60E68164E4 /* Pods-FeignappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeignappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeignappUITests/Pods-FeignappUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99A809C46F8F7B1FE90C2DA7 /* Pods_FeignappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeignappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +237,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		772BE1AC2046E75E0003A3B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1B12046E75E0003A3B6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -219,11 +268,14 @@
 		772BE1222045CE270003A3B6 = {
 			isa = PBXGroup;
 			children = (
+				772BE1A42046BE900003A3B6 /* readmeFiles */,
+				772BE1A22046BE830003A3B6 /* README.md */,
 				772BE12D2045CE270003A3B6 /* Feignapp */,
 				772BE1422045CE270003A3B6 /* FeignappTests */,
 				772BE14D2045CE280003A3B6 /* FeignappUITests */,
 				772BE1572045CE280003A3B6 /* Feignapp WatchKit App */,
 				772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */,
+				772BE1B22046E75E0003A3B6 /* FeignappWidget */,
 				772BE12C2045CE270003A3B6 /* Products */,
 				22498CE20FF4CFC7FBB0D7FD /* Pods */,
 				C3F08421D2290E5670A7CFE4 /* Frameworks */,
@@ -238,6 +290,7 @@
 				772BE14A2045CE280003A3B6 /* FeignappUITests.xctest */,
 				772BE1532045CE280003A3B6 /* Feignapp WatchKit App.app */,
 				772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */,
+				772BE1AF2046E75E0003A3B6 /* FeignappWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +298,7 @@
 		772BE12D2045CE270003A3B6 /* Feignapp */ = {
 			isa = PBXGroup;
 			children = (
+				7780DE142048648E000F6C9E /* Resources */,
 				772BE1882046AE060003A3B6 /* FirebaseServices.swift */,
 				772BE1892046AE060003A3B6 /* HomeViewController.swift */,
 				772BE1862046AE060003A3B6 /* SettingsTableViewController.swift */,
@@ -259,6 +313,7 @@
 				772BE1352045CE270003A3B6 /* Assets.xcassets */,
 				772BE1372045CE270003A3B6 /* LaunchScreen.storyboard */,
 				772BE13A2045CE270003A3B6 /* Info.plist */,
+				7780DE1520486DC4000F6C9E /* StationStruct.swift */,
 			);
 			path = Feignapp;
 			sourceTree = "<group>";
@@ -294,11 +349,11 @@
 		772BE1662045CE280003A3B6 /* Feignapp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				772BE1972046B0FF0003A3B6 /* env */,
+				772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */,
 				772BE1992046B0FF0003A3B6 /* StationStruct.swift */,
+				772BE1972046B0FF0003A3B6 /* env */,
 				772BE19C2046B0FF0003A3B6 /* TableInterfaceController.swift */,
 				772BE19A2046B0FF0003A3B6 /* TravelRow.swift */,
-				772BE19B2046B0FF0003A3B6 /* TravelStruct.swift */,
 				772BE1672045CE280003A3B6 /* InterfaceController.swift */,
 				772BE1692045CE280003A3B6 /* ExtensionDelegate.swift */,
 				772BE16B2045CE280003A3B6 /* NotificationController.swift */,
@@ -326,6 +381,35 @@
 			path = env;
 			sourceTree = "<group>";
 		};
+		772BE1A42046BE900003A3B6 /* readmeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1A62046BEAC0003A3B6 /* watch1.png */,
+				772BE1A72046BEAC0003A3B6 /* phone1.png */,
+				772BE1A52046BEAC0003A3B6 /* phone2.png */,
+			);
+			path = readmeFiles;
+			sourceTree = "<group>";
+		};
+		772BE1B22046E75E0003A3B6 /* FeignappWidget */ = {
+			isa = PBXGroup;
+			children = (
+				772BE1B32046E75E0003A3B6 /* TodayViewController.swift */,
+				772BE1B52046E75E0003A3B6 /* MainInterface.storyboard */,
+				772BE1B82046E75E0003A3B6 /* Info.plist */,
+			);
+			path = FeignappWidget;
+			sourceTree = "<group>";
+		};
+		7780DE142048648E000F6C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7780DE122048648A000F6C9E /* stations.json */,
+				775B721820498E220076BA3A /* stationsFiltered.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C3F08421D2290E5670A7CFE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +418,7 @@
 				553AB86923FA69134D03CE13 /* Pods_Feignapp_WatchKit_Extension.framework */,
 				99A809C46F8F7B1FE90C2DA7 /* Pods_FeignappTests.framework */,
 				A406E94055E6C94F55830E73 /* Pods_FeignappUITests.framework */,
+				772BE1B02046E75E0003A3B6 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -352,11 +437,13 @@
 				772BE17A2045CE280003A3B6 /* Embed Watch Content */,
 				9DD6032D52FD3AFC2977DB0C /* [CP] Embed Pods Frameworks */,
 				363898E8E5859AE75C2D4C12 /* [CP] Copy Pods Resources */,
+				772BE1BF2046E75E0003A3B6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				772BE1562045CE280003A3B6 /* PBXTargetDependency */,
+				772BE1BA2046E75E0003A3B6 /* PBXTargetDependency */,
 			);
 			name = Feignapp;
 			productName = Feignapp;
@@ -445,6 +532,23 @@
 			productReference = 772BE1622045CE280003A3B6 /* Feignapp WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		772BE1AE2046E75E0003A3B6 /* FeignappWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 772BE1BC2046E75E0003A3B6 /* Build configuration list for PBXNativeTarget "FeignappWidget" */;
+			buildPhases = (
+				772BE1AB2046E75E0003A3B6 /* Sources */,
+				772BE1AC2046E75E0003A3B6 /* Frameworks */,
+				772BE1AD2046E75E0003A3B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FeignappWidget;
+			productName = FeignappWidget;
+			productReference = 772BE1AF2046E75E0003A3B6 /* FeignappWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -477,6 +581,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					772BE1AE2046E75E0003A3B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 772BE1262045CE270003A3B6 /* Build configuration list for PBXProject "Feignapp" */;
@@ -497,6 +605,7 @@
 				772BE1492045CE280003A3B6 /* FeignappUITests */,
 				772BE1522045CE280003A3B6 /* Feignapp WatchKit App */,
 				772BE1612045CE280003A3B6 /* Feignapp WatchKit Extension */,
+				772BE1AE2046E75E0003A3B6 /* FeignappWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -506,12 +615,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7780DE132048648A000F6C9E /* stations.json in Resources */,
+				772BE1AA2046BEAC0003A3B6 /* phone1.png in Resources */,
 				772BE1392045CE270003A3B6 /* LaunchScreen.storyboard in Resources */,
 				772BE1962046AF600003A3B6 /* StrawberryBlossom.ttf in Resources */,
 				772BE1362045CE270003A3B6 /* Assets.xcassets in Resources */,
+				772BE1A82046BEAC0003A3B6 /* phone2.png in Resources */,
+				772BE1A32046BE830003A3B6 /* README.md in Resources */,
+				775B721920498E220076BA3A /* stationsFiltered.json in Resources */,
 				772BE1342045CE270003A3B6 /* Main.storyboard in Resources */,
 				772BE1952046AF600003A3B6 /* RammettoOne-Regular.ttf in Resources */,
 				772BE1912046AED00003A3B6 /* GoogleService-Info.plist in Resources */,
+				772BE1A92046BEAC0003A3B6 /* watch1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +658,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				772BE16E2045CE280003A3B6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1AD2046E75E0003A3B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1B72046E75E0003A3B6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +802,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -689,6 +813,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SearchTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -803,6 +928,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7780DE1620486DC4000F6C9E /* StationStruct.swift in Sources */,
 				772BE18B2046AE060003A3B6 /* SettingsTableViewController.swift in Sources */,
 				772BE1312045CE270003A3B6 /* ViewController.swift in Sources */,
 				772BE18D2046AE060003A3B6 /* FirebaseServices.swift in Sources */,
@@ -834,14 +960,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772BE1C320470A990003A3B6 /* TravelStruct.swift in Sources */,
 				772BE16C2045CE280003A3B6 /* NotificationController.swift in Sources */,
 				772BE19D2046B0FF0003A3B6 /* Environment.swift in Sources */,
+				772BE1C220470A990003A3B6 /* StationStruct.swift in Sources */,
 				772BE16A2045CE280003A3B6 /* ExtensionDelegate.swift in Sources */,
 				772BE1682045CE280003A3B6 /* InterfaceController.swift in Sources */,
 				772BE19F2046B0FF0003A3B6 /* TravelRow.swift in Sources */,
-				772BE19E2046B0FF0003A3B6 /* StationStruct.swift in Sources */,
 				772BE1A12046B0FF0003A3B6 /* TableInterfaceController.swift in Sources */,
-				772BE1A02046B0FF0003A3B6 /* TravelStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772BE1AB2046E75E0003A3B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772BE1B42046E75E0003A3B6 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +1002,11 @@
 			target = 772BE1612045CE280003A3B6 /* Feignapp WatchKit Extension */;
 			targetProxy = 772BE1642045CE280003A3B6 /* PBXContainerItemProxy */;
 		};
+		772BE1BA2046E75E0003A3B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 772BE1AE2046E75E0003A3B6 /* FeignappWidget */;
+			targetProxy = 772BE1B92046E75E0003A3B6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -893,6 +1032,14 @@
 				772BE1592045CE280003A3B6 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		772BE1B52046E75E0003A3B6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				772BE1B62046E75E0003A3B6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1087,15 +1234,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C5C152472F5D82BBBB40C912 /* Pods-Feignapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RM283MDQE;
+				DEVELOPMENT_TEAM = T89NDVKT77;
 				INFOPLIST_FILE = Feignapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1103,15 +1251,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A3BF1AE59441A3BDB2F834A /* Pods-Feignapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3RM283MDQE;
+				DEVELOPMENT_TEAM = T89NDVKT77;
 				INFOPLIST_FILE = Feignapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1185,6 +1334,36 @@
 			};
 			name = Release;
 		};
+		772BE1BD2046E75E0003A3B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.Feignapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		772BE1BE2046E75E0003A3B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T89NDVKT77;
+				INFOPLIST_FILE = FeignappWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Feignapp.Feignapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1238,6 +1417,15 @@
 			buildConfigurations = (
 				772BE1822045CE280003A3B6 /* Debug */,
 				772BE1832045CE280003A3B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		772BE1BC2046E75E0003A3B6 /* Build configuration list for PBXNativeTarget "FeignappWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				772BE1BD2046E75E0003A3B6 /* Debug */,
+				772BE1BE2046E75E0003A3B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
