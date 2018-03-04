@@ -9,6 +9,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ArialHB.ttc">
+            <string>ArialHebrew-Bold</string>
+        </array>
         <array key="Helvetica.ttc">
             <string>Helvetica-Light</string>
         </array>
@@ -23,13 +26,15 @@
                             <items>
                                 <button width="64" height="19" alignment="left" title="To Toulon" id="EOQ-g3-Cek">
                                     <color key="titleColor" red="0.046830217086571757" green="1" blue="0.32775432372066016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <fontDescription key="font" type="system" pointSize="9"/>
                                     <connections>
                                         <action selector="switchDirection" destination="AgC-eL-Hgc" id="V3w-P6-cFZ"/>
                                     </connections>
                                 </button>
                                 <imageView width="16" height="16" alignment="left" id="PI9-xN-T5s"/>
-                                <label width="69" height="18" alignment="left" text="Feignapp" id="gOS-OW-Exb"/>
+                                <label width="69" height="18" alignment="left" text="Feignapp" id="gOS-OW-Exb">
+                                    <fontDescription key="font" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="16"/>
+                                </label>
                             </items>
                         </group>
                         <table alignment="left" id="bQq-mJ-jN7">

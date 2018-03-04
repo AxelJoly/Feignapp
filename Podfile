@@ -47,6 +47,7 @@ target 'Feignapp WatchKit Extension' do
   pod 'Alamofire', '~> 4.0'
   pod 'SwiftyJSON'
   pod 'EMTLoadingIndicator', '~> 4.0.0'
+  
   # Pods for TrainApp WatchKit Extension
 
 end

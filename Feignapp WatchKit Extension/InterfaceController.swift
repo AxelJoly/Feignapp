@@ -43,21 +43,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         
         if( (defaults.string(forKey: "arrivalName") != nil) && (defaults.string(forKey: "departureName") != nil) && (defaults.string(forKey: "departureLat") != nil) && (defaults.string(forKey: "departureLon") != nil) && (defaults.string(forKey: "arrivalLat") != nil) && (defaults.string(forKey: "arrivalLon") != nil)){
        
-            print("La valeur est: \(defaults.string(forKey: "arrivalName")!)")
-            print("La valeur est: \(defaults.string(forKey: "arrivalLon")!)")
-            print("La valeur est: \(defaults.string(forKey: "arrivalLat")!)")
-            print("------------------------------")
-            print("La valeur est: \(defaults.string(forKey: "departureName")!)")
-            print("La valeur est: \(defaults.string(forKey: "departureLon")!)")
-            print("La valeur est: \(defaults.string(forKey: "departureLat")!)")
-            
-            
-            self.city1 = StationStruct(name: defaults.string(forKey: "departureName")!, latitude: defaults.string(forKey: "departureLat")!, longitude: defaults.string(forKey: "departureLon")!)
+           self.city1 = StationStruct(name: defaults.string(forKey: "departureName")!, latitude: defaults.string(forKey: "departureLat")!, longitude: defaults.string(forKey: "departureLon")!)
             self.city2 = StationStruct(name: defaults.string(forKey: "arrivalName")!, latitude: defaults.string(forKey: "arrivalLat")!, longitude: defaults.string(forKey: "arrivalLon")!)
             self.switchButton.setTitle("To \(city2.name)")
         }
         urlRequest(departure: self.city1, arriving: self.city2)
-       
     }
     
     // Init session between the Watch app and iOS app
@@ -69,12 +59,10 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             session.activate()
         }
         direction()
-        
     }
     
     override func didDeactivate() {
         super.didDeactivate()
-        
     }
     
     // Call the sendMessage method after clicking on TableView cell.
@@ -107,7 +95,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         if let authorizationHeader = Request.authorizationHeader(user: user, password: password) {
             headers[authorizationHeader.key] = authorizationHeader.value
         }
-       Alamofire.request("https://api.sncf.com/v1/coverage/sncf/journeys?from=\(departure.longitude)%3B\(departure.latitude)&to=\(arriving.longitude)%3B\(arriving.latitude)&count=\(self.count)&", headers: headers)
+        Alamofire.request("https://api.sncf.com/v1/coverage/sncf/journeys?from=\(departure.longitude)%3B\(departure.latitude)&to=\(arriving.longitude)%3B\(arriving.latitude)&count=\(self.count)&", headers: headers)
          .responseJSON { response in
             if let json = response.result.value {
                 let values = JSON(json)
@@ -169,18 +157,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         let arrivalLon = message["arrivalLon"] as? String
 
         DispatchQueue.main.async { () -> Void in
-            print("La valeur est: \(value!)")
-            print("La valeur est: \(arrival!)")
-             print("La valeur est: \(arrivalLon!)")
-            print("La valeur est: \(arrivalLat!)")
-            print("------------------------------")
-            print("La valeur est: \(departure!)")
-            print("La valeur est: \(departureLon!)")
-            print("La valeur est: \(departureLat!)")
-            
-            
             self.count = Int(value!)!
-        
             let defaults = UserDefaults.standard
             let nbJourney = value!
             defaults.set(nbJourney, forKey: "nbJourney")
@@ -191,7 +168,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
             defaults.set(departureLon, forKey: "departureLon")
             defaults.set(arrivalLon, forKey: "arrivalLon")
             self.city1 = StationStruct(name: departure!, latitude: departureLat!, longitude: departureLon!)
-            self.city2 = StationStruct(name: arrival!, latitude: departureLat!, longitude: departureLon!)
+            self.city2 = StationStruct(name: arrival!, latitude: arrivalLat!, longitude: arrivalLon!)
             self.switchButton.setTitle("To \(self.city2.name)")
             self.direction()
         }
@@ -213,7 +190,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     func sendMessage(index: Int){
         let messageBody = "Mon train est a \(self.hours[index])"
         let urlSafeBody = messageBody.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
-        if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:0603310333&body=\(urlSafeBody)") {
+        if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:\(self.env.PHONE_NUMBER)&body=\(urlSafeBody)") {
             WKExtension.shared().openSystemURL(url as URL)
         }
     }

@@ -40,13 +40,10 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
             self.departure.text! = defaults.string(forKey: "departure")!
             self.arrival.text! = defaults.string(forKey: "arrival")!
         }
-        
-      
         DispatchQueue.main.async { () -> Void in
         self.displayStationsList()
         self.fillStations(searchTextField: self.departure)
         self.fillStations(searchTextField: self.arrival)
-       
         }
     }
 
@@ -75,10 +72,7 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
         }
         
     }
-    
-    
-    
-    
+
     // Send value of the input UITextfield to the Watch app.
     func sendMessage(){
         let departureGPS = findElementByName(stationName: self.departure.text!)
@@ -87,7 +81,9 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
         if departureGPS["error"] != nil{
             popupBuilder.popUp(title: "Error", message: "Something went wrong, please choose your stations again.", vc: self)
         }else{
-            let messageToSend = ["nbJourney": self.journeyCount.text, "departureName": self.departure.text, "arrivalName": self.arrival.text, "departureLat": departureGPS["latitude"], "arrivalLat": arrivalGPS["latitude"], "departureLon": departureGPS["longitude"], "arrivalLon": arrivalGPS["longitude"]]
+            let departureName = self.substring(stationName: self.departure.text!)
+            let arrivalName = self.substring(stationName: self.arrival.text!)
+            let messageToSend = ["nbJourney": self.journeyCount.text, "departureName": departureName, "arrivalName": arrivalName, "departureLat": departureGPS["latitude"], "arrivalLat": arrivalGPS["latitude"], "departureLon": departureGPS["longitude"], "arrivalLon": arrivalGPS["longitude"]] as [String : Any]
             let defaults = UserDefaults.standard
             let nbJourney = self.journeyCount.text
             defaults.set(nbJourney, forKey: "nbJourney")
@@ -116,13 +112,6 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
         }
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-       
-        let allowedCharacters = CharacterSet.decimalDigits
-        let characterSet = CharacterSet(charactersIn: string)
-        return allowedCharacters.isSuperset(of: characterSet)
-    }
-    
     // Display UIAlertController with title and message parameters.
     func alertDisplay(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -149,6 +138,7 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
         }
     }
     
+    // Put station's names inside the SearchTextField
     func fillStations(searchTextField: SearchTextField){
         var temp: [String] = []
         for i in 0...stationsArray.count - 1{
@@ -157,6 +147,7 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
         searchTextField.filterStrings(temp)
     }
     
+    // Find the object related to the name and return latitude/longitude
     func findElementByName(stationName: String) -> [String: String]{
         for i in 0...self.stationsArray.count {
             if(stationName == self.stationsArray[i].name){
@@ -164,6 +155,19 @@ class SettingsTableViewController: UITableViewController, WCSessionDelegate, UIT
             }
         }
         return ["error": "Station not found"]
+    }
+    
+    // Return the cutted-version of the station
+    func substring(stationName: String) -> String{
+        let start = stationName.index(stationName.startIndex, offsetBy: 8)
+        let range = start..<stationName.endIndex
+        
+        if stationName.range(of:"Gare de ") != nil {
+           
+            return String(stationName[range])
+        }else{
+           return stationName
+        }
     }
     
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
