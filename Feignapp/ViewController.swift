@@ -134,14 +134,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Set placeholder value to the textfield
     func textFieldPlaceholderInit(textField: UITextField, placeholder: String, color: UIColor){
        textField.attributedPlaceholder = NSAttributedString(string: placeholder,
-                                                                     attributes: [NSAttributedStringKey.foregroundColor: color])
+                                                            attributes: [NSAttributedString.Key.foregroundColor: color])
     }
     
     // Set padding of placeholder from the left corner
     func setPaddingPlaceholder(textField: UITextField){
         let paddingView = UIView(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 15, height: textField.frame.height)))
         textField.leftView = paddingView
-        textField.leftViewMode = UITextFieldViewMode.always
+        textField.leftViewMode = UITextField.ViewMode.always
     }
     
 }
@@ -149,12 +149,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //Extension of UIView defining fading in and out functions to animate the view
 extension UIView {
     func fadeIn(_ duration: TimeInterval = 0.3, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 1.0
         }, completion: completion)  }
     
     func fadeOut(_ duration: TimeInterval = 0.3, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
-        UIView.animate(withDuration: duration, delay: delay, options: UIViewAnimationOptions.curveEaseIn, animations: {
+        UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
             self.alpha = 0.7
         }, completion: completion)
     }

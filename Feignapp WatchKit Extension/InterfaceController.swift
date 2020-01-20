@@ -188,9 +188,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     
     // Open the Message App and send a message which contains the hour of the departure.
     func sendMessage(index: Int){
+        print("Selected hour: " + self.hours[index])
         let messageBody = "Mon train est a \(self.hours[index])"
         let urlSafeBody = messageBody.addingPercentEncoding( withAllowedCharacters: .urlQueryAllowed)
         if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:\(self.env.PHONE_NUMBER)&body=\(urlSafeBody)") {
+            print("ca passe")
             WKExtension.shared().openSystemURL(url as URL)
         }
     }

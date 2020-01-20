@@ -1,22 +1,18 @@
 //
 //  TodayViewController.swift
-//  FeignappWidget
+//  Feignapp Widget
 //
-//  Created by Joly Axel on 28/02/2018.
+//  Created by Joly Axel on 13/03/2018.
 //  Copyright © 2018 Axel Joly. All rights reserved.
 //
 
 import UIKit
 import NotificationCenter
 
-
 class TodayViewController: UIViewController, NCWidgetProviding {
         
-    @IBOutlet weak var label: UILabel!
-    var counter = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "\(counter)"
         // Do any additional setup after loading the view from its nib.
     }
     
@@ -35,11 +31,4 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
-    @IBAction func test(_ sender: Any) {
-       self.counter = self.counter + 1
-       label.text = "\(counter)"
-    }
-    
-    // Url request to SNCF api and set data in TravelStruct object.
- 
 }
