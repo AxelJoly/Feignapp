@@ -2,8 +2,8 @@
 //  StationStruct.swift
 //  Feignapp
 //
-//  Created by Joly Axel on 01/03/2018.
-//  Copyright © 2018 Axel Joly. All rights reserved.
+//  Created by Joly Axel on 22/01/2020.
+//  Copyright © 2020 Axel Joly. All rights reserved.
 //
 
 import Foundation
