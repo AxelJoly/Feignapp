@@ -19,13 +19,13 @@ UPDATE v1.1: You can now define your stations in the settings page, it will sync
 ### Apple Watch App
 
 
-<img src="https://github.com/AxelJoly/Feignapp/blob/master/watch1.png" width="300" height="300" />
+<img src="https://github.com/AxelJoly/Feignapp/blob/master/readmeFiles/watch1.png" width="300" height="300" />
 
 
 
 ### iPhone App
 
-| <img src="https://github.com/AxelJoly/Feignapp/blob/master/phone1.png" width="300" height="650" /> | <img src="https://github.com/AxelJoly/Feignapp/blob/master/phone2.png" width="300" height="650" /> |
+| <img src="https://github.com/AxelJoly/Feignapp/blob/master/readmeFiles/phone1.png" width="300" height="650" /> | <img src="https://github.com/AxelJoly/Feignapp/blob/master/readmeFiles/phone2.png" width="300" height="650" /> |
 | ------------- | ------------- |
 
 
